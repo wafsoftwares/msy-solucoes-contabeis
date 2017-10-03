@@ -59,7 +59,7 @@
   <!-- container da logo -->
   <div class="jumbotron text-center">
     <!--<h1 class="margin">Empresa</h1>-->
-    <img src="<?php echo BASE_URL; ?>public/img/logo.png" class="img-responsive img-circle margin" style="display:inline" alt="imagem" width="450" height="450">
+    <img src="<?php echo BASE_URL; ?>public/img/logo.png" class="img-responsive" style="display:inline" alt="imagem" width="650" height="650">
     <p>Focada em Gestão Empresarial</p>
   </div>
 
@@ -194,23 +194,25 @@
         <p><span class="glyphicon glyphicon-map-marker"></span> Contagem, Industrial, Brasil</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> +55 31 3362-3647</p>
         <p><span class="glyphicon glyphicon-phone"></span> +55 31 9 9378-1707</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> contabilidade@contabilidademsy.com</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> contato@msysolucoescontabeis.com.br</p>
       </div>
+      <form action="<?php echo BASE_URL; ?>app/requests/processa_contato.php" method="post">
       <div class="col-sm-7 slideanim">
-        <div class="row">          
+        <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+            <input class="form-control" id="nome" name="contato[nome]" placeholder="Nome" type="text" required>
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <input class="form-control" id="email" name="contato[email]" placeholder="Email" type="email" required>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
+        <textarea class="form-control" id="comentario" name="contato[comentario]" placeholder="Comentário" rows="5"></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
             <button class="btn btn-default pull-right" type="submit">Enviar</button>
           </div>
         </div>
+        </form>
       </div>
     </div>
   </div>

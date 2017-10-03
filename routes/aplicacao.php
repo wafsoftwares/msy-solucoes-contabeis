@@ -21,3 +21,6 @@ if (! defined('DIRETORIO_MODULES'))
 # definindo constante com a rota do diretório requests/
 if (! defined('DIRETORIO_REQUESTS'))
   define('DIRETORIO_REQUESTS', ABS_PATH . 'app/requests/');
+
+if (! defined('DIRETORIO_FUNCTIONS'))
+  define('DIRETORIO_FUNCTIONS', ABS_PATH . 'database/functions/');
