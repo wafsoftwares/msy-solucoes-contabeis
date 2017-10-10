@@ -1,0 +1,46 @@
+@charset 'utf8';
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fontes/open-sans/opensans-regular.ttf');
+}
+
+/* aumentando enchimento entre o início da página e o cabeçalho */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    padding-top: 10px;
+}
+
+/* alterando tamenho de fonte e cor da fonte dos títulos h2 */
+.titulo {
+    font-size: 120%;
+    color: #777;
+}
+
+/* alterando tamanho de fonte do caption */
+.tabela caption {
+    font-size: 120%;
+}
+
+/* alterando tamenho de fonte do th */
+.tabela th {
+    font-size: 115%;
+}
+
+/* alterando tamanho de fonte do td */
+.tabela td {
+    font-size: 110%;
+}
+
+
+/* alterando a cor de fundo padrão da navbar do bootstrap */
+.navbar-default {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+/* alterando a cor de fonte padrão da navbar do bootstrap */
+.navbar-default .navbar-brand {
+    color: #fff;
+}
