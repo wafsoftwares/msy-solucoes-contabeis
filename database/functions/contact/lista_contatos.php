@@ -4,7 +4,8 @@ function retornaContatos($db)
 {
   $query =
     "SELECT
-      data,
+      id,
+      DATE_FORMAT(data, '%d-%m-%Y') AS data,
       nome,
       email,
       comentario
@@ -17,10 +18,11 @@ function retornaContatos($db)
     while ($registro = $resultado->fetch_array(MYSQLI_ASSOC)) {
 
       $contatos[] = array(
+        'id'         => $registro['id'],
         'data'       => $registro['data'],
-        'nome'       => $registro['nome'],
-        'email'      => $registro['email'],
-        'comentario' => $registro['comentario']
+        'nome'       => ucwords($registro['nome']),
+        'email'      => strtolower($registro['email']),
+        'comentario' => ucwords($registro['comentario'])
       );
 
     }
@@ -29,4 +31,20 @@ function retornaContatos($db)
 
   return $contatos;
 
+}
+
+function deletaContato($db, $id)
+{
+  $query =
+    "DELETE FROM contatos WHERE id = '$id'";
+
+  $resultado = mysqli_query($db, $query);
+
+  if ($resultado) {
+
+    return true;
+
+  }
+
+  return false;
 }

@@ -209,7 +209,7 @@
         <textarea class="form-control" id="comentario" name="contato[comentario]" placeholder="Comentário" rows="5"></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Enviar</button>
+            <button class="btn btn-default pull-right" id="enviar" type="submit">Enviar</button>
           </div>
         </div>
         </form>
@@ -238,6 +238,14 @@
 
   <!-- importando script da página index -->
   <script src="<?php echo BASE_URL; ?>public/js/index.js"></script>
+
+  <script type="text/javascript">
+    $('document').ready(function() {
+      $('#enviar').click(function() {
+        alert('Seu contato foi gravado com sucesso!');
+      })
+    })
+  </script>
 
 </body>
 

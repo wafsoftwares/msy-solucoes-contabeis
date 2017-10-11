@@ -54,7 +54,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a href="relatorio_consulta_ajuste.php" class="navbar-brand">Relatório de Conteúdo Postado de Goleiro - Ranking Avanção</a>
+                <a href="#" class="navbar-brand">Contatos Gravados</a>
               </div> <!-- cabeçalho -->
             </div> <!-- container -->
           </nav> <!-- navegação -->
@@ -81,9 +81,14 @@
                 <?php foreach($contatos as $contato) : ?>
                   <tr>
                     <td class="text-center"><?php echo $contato['data']; ?></td>
-                    <td class="text-center"><?php echo $contato['nome']; ?></td>
-                    <td class="text-center"><?php echo $contato['email']; ?></td>
-                    <td class="text-center"><?php echo $contato['comentario']; ?></td>
+                    <td class="text-left"><?php echo $contato['nome']; ?></td>
+                    <td class="text-left"><?php echo $contato['email']; ?></td>
+                    <td class="text-left"><?php echo $contato['comentario']; ?></td>
+                    <td class="text-center">
+                      <a href="<?php echo BASE_URL; ?>app/requests/excluir.php?id=<?php echo $contato['id']; ?>" class="btn btn-sm btn-danger" data-toggle="modal">
+                        <i class="fa fa-trash"></i> Excluir
+                      </a>
+                    </td>
                   </tr>
                 <?php endforeach; ?>
               </tbody>
