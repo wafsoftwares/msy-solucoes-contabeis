@@ -18,9 +18,6 @@
   <!-- font montserrat -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
-  <!-- font lato -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-
   <!-- importando folha de estilo do framework normalize -->
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>libs/normalize/css/normalize.css">
 
@@ -43,7 +40,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand">Logo</a>
+        <a href="#" class="navbar-brand"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -66,15 +63,12 @@
   <!-- container sobre -->
   <div id="about" class="container-fluid">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-10">
         <h2>Saiba um pouco mais sobre nós</h2>
-        <h4>Somos a MSY Soluções Contábeis</h4>
 
-        <p class="text-justify">Oferecemos a utilização de um software de gestão empresarial para controle de operações diárias e apuração de resultados por centro de custo. A <strong>MSY</strong> conduz seus trabalhos de auditória em todas as suas abordagens, etapas similares de seu início à sua conclusão. Diferenciando detalhes técnicos e operacionais de acordo com o resultado que pretende alcançar. Da criação da empresa e sua identidade mercadológica até sua parte estrutural.</p>
-
-        <p><strong>Planejamento</strong>, <strong>Levantamento e Análise de Dados</strong>, <strong>Preparação e Divulgação e Resultados</strong></p>
+        <h4 class="text-justify">Oferecemos a utilização de um software de gestão empresarial para controle de operações diárias e apuração de resultados por centro de custo. A <strong>MSY</strong> conduz seus trabalhos de auditória em todas as suas abordagens, etapas similares de seu início à sua conclusão. Diferenciando detalhes técnicos e operacionais de acordo com o resultado que pretende alcançar. Da criação da empresa e sua identidade mercadológica até sua parte estrutural.</h4>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-2">
         <span class="glyphicon glyphicon-signal logo"></span>
       </div>
     </div>
@@ -83,27 +77,17 @@
   <!-- container missão e visão -->
   <div class="container-fluid bg-grey">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <span class="glyphicon glyphicon-globe logo slideanim"></span>
       </div>
-      <div class="col-sm-8">
-        <h2>Nossos Valores</h2>
-        <h4><strong>MISSÃO:</strong><br> A nossa missão é atender o cliente prestando o suporte necessário para que se crie a sua empresa ou se adéque as normas devidas e tenha uma progressão em seu devido ramo. Garantir aos clientes a satisfação em adquirir os nossos serviços, atendendo suas expectativas com preços competitivos. Essa é a razão de existir a <strong>MSY Soluções Contábeis e o seu objetico maior</strong>.</h4>
+      <div class="col-sm-9">
+        <h2 class="text-center">Nossos Valores</h2>
 
-        <h4><strong>VISÃO:</strong><br> Comercializar serviços de qualidade e segurança. Garantir aos clientes a satisfação de nos escolher. Ser até 2018 uma empresa reconhecida por exercer uma atividade de qualidade.</h4>
+        <h4 class="text-justify"><strong>MISSÃO:</strong><br><br> A nossa missão é atender o cliente prestando o suporte necessário para que se crie a sua empresa ou se adéque as normas devidas e tenha uma progressão em seu devido ramo. Garantir aos clientes a satisfação em adquirir os nossos serviços, atendendo suas expectativas com preços competitivos. Essa é a razão de existir a <strong>MSY Soluções Contábeis e o seu objetivo maior</strong>.</h4>
 
-        <h4><strong>VALORES:</strong>
-          <ul>
-            <li>Inovação</li>
-            <li>Compromisso</li>
-            <li>Ética nos Negócios</li>
-            <li>Disposição</li>
-            <li>Responsabilidade</li>
-            <li>Respeito e Valorização do ser Humano</li>
-            <li>Transparência</li>
-            <li>Credibilidade</li>
-          </ul>
-        </h4>
+        <h4 class="text-justify"><strong>VISÃO:</strong><br><br> Comercializar serviços de qualidade e segurança. Garantir aos clientes a satisfação de nos escolher. Ser até 2018 uma empresa reconhecida por exercer uma atividade de qualidade.</h4>
+
+        <h4 class="text-justify"><strong>VALORES:</strong><br><br> Inovação, Compromisso, Ética nos Negócios, Disposição, Responsabilidade, Respeito e Valorização do Ser Humano, Transparência e Credibilidade.</h4>
       </div>
     </div>
   </div>
@@ -111,31 +95,39 @@
   <!-- container de serviços -->
   <div id="services" class="container-fluid text-center">
     <h2 class="margin">SERVIÇOS</h2>
-    <h4>What we offer</h4>
+    <h4>O que nós oferecemos</h4>
     <br>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-off logo-small"></span>
+        <a href="#contabilidade">
+          <span class="glyphicon glyphicon-file logo-small"></span>
+        </a>
         <h4>CONTABILIDADE</h4>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Organização e Compilação de Dados</p>
       </div>
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-heart logo-small"></span>
+        <a href="#consultoria">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+        </a>
         <h4>CONSULTÓRIA</h4>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Prestação de Serviço Profissional e Qualificado</p>
       </div>
       <div class="col-sm-4">
-        <span class="glyphicon glyphicon-lock logo-small"></span>
-        <h4>AUDITÓRIA</h4>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <a href="#auditoria">
+          <span class="glyphicon glyphicon-list-alt logo-small"></span>
+        </a>
+        <h4>AUDITORIA</h4>
+        <p>Revisões que Asseguram a Fidelidade dos Registros</p>
       </div>
     </div>
     <br><br>
     <div class="row slideanim">
       <div class="col-sm-4 col-sm-offset-4">
-        <span class="glyphicon glyphicon-certificate logo-small"></span>
+        <a href="#plano-de-negocios">
+          <span class="glyphicon glyphicon-book logo-small"></span>
+        </a>
         <h4>PLANO DE NEGÓCIOS</h4>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p>Guia para o Empreendedor ou Empresário</p>
       </div>
     </div>
   </div>
@@ -147,6 +139,29 @@
       <div class="col-sm-12">
         <div class="thumbnail">
           <img src="<?php echo BASE_URL; ?>public/img/trabalhando.jpg" alt="imagem">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-grey">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>CONTABILIDADE</h2>
+          <h4 class="text-justify" id="contabilidade">A Contabilidade procura captar, organizar e compilar dados. Sua matéria prima são fatos de significado econômicos e financeiros expressos em moeda. Seu produto final são demonstrações financeiras. A contabilidade organiza e proporciona um bem-estar para a empresa.</h4>
+
+          <h2 id="consultoria">CONSULTORIA</h2>
+          <h4 class="text-justify">Consultoria, de uma forma ampla, é o fornecimento de determinada prestação de serviço, em geral por profissional qualificado e conhecedor do tema. O serviço de consultoria oferecido ao cliente acontece por meio de diagnósticos e processos e tem o propósito de levantar as necessidades do cliente, identificar soluções e recomendar ações. De posse dessas informações, o consultor desenvolve, implanta e viabiliza o projeto de acordo com a necessidade específica de cada cliente.</h4>
+
+          <h2 id="auditoria">AUDITORIA</h2>
+          <h4 class="text-justify">Uma Auditoria é uma revisão das demonstrações financeiras, sistema financeiro, registros, transações e operações de uma entidade ou de um projeto, efetuada por contadores, com a finalidade de assegurar a fidelidade dos registros e proporcionar credibilidade às demonstrações financeiras e outros relatórios da administração. A Auditoria também identifica deficiências no sistema de controle interno e no sistema financeiro e apresenta recomendações para melhorá-lo.</h4>
+
+          <h4 class="text-justify">A Auditória segue as seguintes etapas: <strong>Planejamento, Levantamento e Análise de Dados, Preparação e Divulgação de Resultados</strong>.</h4>
+
+          <h2 id="plano-de-negocios">PLANO DE NEGÓCIOS</h2>
+
+          <h4 class="text-justify">Um Plano de Negócios é um guia para o empreendedor ou empresário. Trata-se de um documento onde se descreve um negócio, se analisa a situação do mercado e se estabelecem as ações que se irão realizar no futuro juntamente com as estratégias correspondentes para implementá-las.</h4>
+
+          <h4 class="text-justify">Deste modo, o Plano de Negócios é um instrumento que permite comunicar uma ideia de negócio para vender ou para obter financiamento. Também se trata de uma ferramenta de uso interno para o empresário, pois permite-lhe avaliar a viabilidade das suas ideias e fazer um seguimento da aplicação dessas na prática.</h4>
         </div>
       </div>
     </div>
@@ -191,7 +206,7 @@
     <div class="row">
       <div class="col-sm-5">
         <p>Entre em contato, retornamos dentro de 24 horas.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Contagem, Industrial, Brasil</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Contagem, 177, Industrial, Brasil</p>
         <p><span class="glyphicon glyphicon-phone-alt"></span> +55 31 3362-3647</p>
         <p><span class="glyphicon glyphicon-phone"></span> +55 31 9 9378-1707</p>
         <p><span class="glyphicon glyphicon-envelope"></span> contato@msysolucoescontabeis.com.br</p>

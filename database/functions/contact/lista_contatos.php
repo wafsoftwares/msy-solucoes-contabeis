@@ -6,6 +6,7 @@ function retornaContatos($db)
     "SELECT
       id,
       DATE_FORMAT(data, '%d-%m-%Y') AS data,
+      horario,
       nome,
       email,
       comentario
@@ -20,6 +21,7 @@ function retornaContatos($db)
       $contatos[] = array(
         'id'         => $registro['id'],
         'data'       => $registro['data'],
+        'horario'    => $registro['horario'],
         'nome'       => ucwords($registro['nome']),
         'email'      => strtolower($registro['email']),
         'comentario' => ucwords($registro['comentario'])

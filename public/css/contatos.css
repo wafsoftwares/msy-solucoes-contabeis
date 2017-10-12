@@ -1,13 +1,18 @@
 @charset 'utf8';
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fontes/open-sans/opensans-regular.ttf');
+  font-family: 'Museosans 1';
+  src: url(../fonts/museosans_1.otf);
+}
+
+@font-face {
+  font-family: 'Museosans 100';
+  src: url(../fonts/museosans_100.otf);
 }
 
 /* aumentando enchimento entre o início da página e o cabeçalho */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Museosans 100', sans-serif;
     font-size: small;
     padding-top: 10px;
 }
@@ -34,13 +39,18 @@ body {
 }
 
 
-/* alterando a cor de fundo padrão da navbar do bootstrap */
-.navbar-default {
-    background-color: #337ab7;
-    border-color: #2e6da4;
+.navbar {
+  font-family: 'Museosans 100', sans-serif;
+  margin-bottom: 0;
+  background-color: #0098da;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
 }
 
-/* alterando a cor de fonte padrão da navbar do bootstrap */
-.navbar-default .navbar-brand {
-    color: #fff;
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
 }

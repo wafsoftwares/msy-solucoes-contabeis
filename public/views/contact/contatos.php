@@ -38,14 +38,21 @@
     <!-- css -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/contatos.css">
     <!-- css -->
+
+    <style>
+      body {
+        padding-top: 100px;
+        padding-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
     <!-- container -->
-    <div class="container">
+    <div class="container-fluid">
       <!-- cabeçalho -->
       <header class="row">
         <div class="col-md-12">
-          <nav class="navbar navbar-default" role="navigation">
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -54,7 +61,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">Contatos Gravados</a>
+                <a href="#" class="navbar-brand" id="titulo">Contatos Gravados</a>
               </div> <!-- cabeçalho -->
             </div> <!-- container -->
           </nav> <!-- navegação -->
@@ -74,19 +81,22 @@
                   <th class="text-center">Nome</th>
                   <th class="text-center">E-mail</th>
                   <th class="text-center">Comentário</th>
+                  <th class="text-center">Opções</th>
                 </tr>
               </thead>
 
               <tbody>
                 <?php foreach($contatos as $contato) : ?>
                   <tr>
-                    <td class="text-center"><?php echo $contato['data']; ?></td>
-                    <td class="text-left"><?php echo $contato['nome']; ?></td>
-                    <td class="text-left"><?php echo $contato['email']; ?></td>
-                    <td class="text-left"><?php echo $contato['comentario']; ?></td>
+                    <td class="text-center">
+                      <?php echo $contato['data'] . ' ' . $contato['horario']; ?>
+                    </td>
+                    <td class="text-center"><?php echo $contato['nome']; ?></td>
+                    <td class="text-center"><?php echo $contato['email']; ?></td>
+                    <td class="text-center"><?php echo $contato['comentario']; ?></td>
                     <td class="text-center">
                       <a href="<?php echo BASE_URL; ?>app/requests/excluir.php?id=<?php echo $contato['id']; ?>" class="btn btn-sm btn-danger" data-toggle="modal">
-                        <i class="fa fa-trash"></i> Excluir
+                        <i class="fa fa-trash"></i> <strong>Excluir</strong>
                       </a>
                     </td>
                   </tr>

@@ -1,0 +1,35 @@
+@charset 'utf8';
+
+@font-face {
+  font-family: 'Museosans 1';
+  src: url(../fonts/museosans_1.otf);
+}
+
+@font-face {
+  font-family: 'Museosans 100';
+  src: url(../fonts/museosans_100.otf);
+}
+
+body {
+  font-family: 'Museosans 100', sans-serif;
+}
+
+h1 {
+  font-family: 'Museosans 1', sans-serif;
+}
+
+.navbar {
+  font-family: 'Museosans 1', sans-serif;
+  margin-bottom: 0;
+  background-color: #0098da;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}

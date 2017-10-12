@@ -1,12 +1,23 @@
 @charset 'utf8';
 
+@font-face {
+  font-family: 'Museosans 1';
+  src: url(../fonts/museosans_1.otf);
+}
+
+@font-face {
+  font-family: 'Museosans 100';
+  src: url(../fonts/museosans_100.otf);
+}
+
 .body {
-      font: 400 15px Lato, sans-serif;
+      font: 400 15px 'Museosans 100', sans-serif;
       line-height: 1.8;
       color: #818181;
     }
 
     h2 {
+      font-family: 'Museosans 1';
       font-size: 24px;
       text-transform: uppercase;
       color: #303030;
@@ -15,6 +26,7 @@
     }
 
     h4 {
+      font-family: 'Museosans 100';
       font-size: 19px;
       line-height: 1.375em;
       color: #303030;
@@ -32,9 +44,9 @@
 
     /* navegação */
     .navbar {
-      font-family: Montserrat, sans-serif;
+      font-family: 'Museosans 1', sans-serif;
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #0098da;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -49,7 +61,7 @@
     }
 
     .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
+      color: #0098da !important;
       background-color: #fff !important;
     }
 
@@ -62,7 +74,8 @@
       font-family: Montserrat, sans-serif;
       background-color: #ffffff;
       color: #ffffff;
-      padding: 100px 25px;
+      padding: 100px 0 100px 0;
+      margin: 0 0 0 0;
     }
 
     .bg-grey {
@@ -70,12 +83,12 @@
     }
 
     .logo {
-      color: #f4511e;
+      color: #0098da;
       font-size: 200px;
     }
 
     .logo-small {
-      color: #f4511e;
+      color: #0098da;
       font-size: 50px;
     }
 
@@ -95,15 +108,15 @@
     .carousel-control.right,
     .carousel-control.left {
       background-image: none;
-      color: #f4511e;
+      color: #0098da;
     }
 
     .carousel-indicators li {
-      border-color: #f4511e;
+      border-color: #0098da;
     }
 
     .carousel-indicators li.active {
-      background-color: #f4511e;
+      background-color: #0098da;
     }
 
     /* itens do carrossel */

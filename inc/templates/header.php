@@ -12,12 +12,12 @@
 
   <style>
     body {
-      padding-top: 50px;
+      padding-top: 100px;
       padding-bottom: 20px;
     }
   </style>
 
-  <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/style.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/css/app.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 </head>
 <body>
@@ -30,12 +30,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASE_URL; ?>index.php" class="navbar-brand">CRUD</a>
+          <a href="<?php echo BASE_URL; ?>index.php" class="navbar-brand"></a>
         </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Clientes <span class="caret"></span>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> CLIENTES <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="<?php echo BASE_URL; ?>customers">Gerenciar Clientes</a></li>
